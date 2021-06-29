@@ -148,14 +148,7 @@ public class HW4_4 {
 		System.out.println(formatOverallPoints);
 		System.out.println(formatOverallPercentage);
 		System.out.println("-------------------------------------");
-		System.out.println(statement);
-		
-		
-		
-	
-		
-		
-		
+		System.out.println(statement);	
 
 	}
 
