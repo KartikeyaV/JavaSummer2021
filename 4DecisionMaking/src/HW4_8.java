@@ -53,11 +53,6 @@ public class HW4_8 {
 		System.out.println(formatSpace);
 		System.out.println("------------------------------------------------------------");
 		System.out.println(formatTotal);
-		System.out.println("------------------------------------------------------------");
-		
-		
-		
-		
 	}
 
 }
