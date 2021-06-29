@@ -9,8 +9,6 @@ public class HW4_2 {
 		int loan = RUI.readUserIntInput("Enter Your Loan Amount:");
 		int interestRate = RUI.readUserIntInput("Enter Your Interest Rate:");
 		int period = RUI.readUserIntInput("Enter the Loan Period in Months: ");
-		
-
 	}
 
 }
