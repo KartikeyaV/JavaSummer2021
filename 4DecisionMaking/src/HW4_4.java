@@ -1,7 +1,6 @@
 /**
  * HW4_4
  * @author karti
- *
  */
 public class HW4_4 {
 	
@@ -34,7 +33,6 @@ public class HW4_4 {
 			System.out.println("Invalid Input");
 		}
 		return letter;
-	    
 	  }
 	public static void main(String[] args) {
 		String name = RUI.readUserStringInput("Enter your name:");
@@ -42,7 +40,7 @@ public class HW4_4 {
 		float eng = RUI.readUserIntInput("Enter Your Grade In English:");
 		float lat = RUI.readUserIntInput("Enter Your Grade In Latin:");
 		float sci = RUI.readUserIntInput("Enter Your Grade In Science:");
-		String mathLetter = "sdf";
+		String mathLetter = "";
 		String engLetter = "";
 		String latLetter = "";
 		String sciLetter = "";
@@ -90,7 +88,6 @@ public class HW4_4 {
 		System.out.println(formatOverallPercentage);
 		System.out.println("-------------------------------------");
 		System.out.println(statement);	
-
 	}
 
 }
