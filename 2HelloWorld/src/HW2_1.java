@@ -9,6 +9,6 @@ public class HW2_1 {
 		System.out.println("* *");
 		System.out.println("* * *");
 		System.out.println("* * * *");
-		System.out.println("* * * * *asdasd");
+		System.out.println("* * * * *asdasasaSd");
 	}
 }
