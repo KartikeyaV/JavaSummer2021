@@ -14,7 +14,8 @@ public class HW4_4 {
 		String mathLetter = "";
 		String engLetter = "";
 		String latLetter = "";
-		String scoLetter = "";
+		String sciLetter = "";
+		int numOfClasses = 4;
 		
 		if (math > 100) {
 			System.out.println("Restart and Enter a Valid Grade For Math");
@@ -57,28 +58,101 @@ public class HW4_4 {
 		if (lat > 100) {
 			System.out.println("Restart and Enter a Valid Grade For Latin");
 			lat = 0;
+		} else if (lat > 90) {
+			latLetter = "A+";
+		} else if (lat > 80){
+			latLetter = "A";
+		} else if (lat > 70) {
+			latLetter = "B+";
+		} else if (lat > 60) {
+			latLetter = "B";
+		} else if (lat > 50){
+			latLetter = "C";
+		} else if (lat >= 1) {
+			latLetter = "F";
 		} else if (lat < 1) {
 			System.out.println("Restart and Enter a Valid Grade For Latin");
 			lat = 0;
 		}
 		if (sci > 100) {
 			System.out.println("Restart and Enter a Valid Grade For Science");
-			lat = 0;
+			sci = 0;
+		} else if (sci > 90) {
+			sciLetter = "A+";
+		} else if (sci > 80){
+			sciLetter = "A";
+		} else if (sci > 70) {
+			sciLetter = "B+";
+		} else if (sci > 60) {
+			sciLetter = "B";
+		} else if (sci > 50){
+			sciLetter = "C";
+		} else if (sci >= 1) {
+			sciLetter = "F";
 		} else if (sci < 1) {
 			System.out.println("Restart and Enter a Valid Grade For Science");
-			lat = 0;
+			sci = 0;
 		}
 		
 		
+		String formatTitle = String.format("%-15s | %-7s | %-7s |", "Subject", "Marks", "Grade");
+		String formatMath = String.format("%-15s | %-7s | %-7s |", "Math", math, mathLetter);
+		String formatEng = String.format("%-15s | %-7s | %-7s |", "English", eng, engLetter);
+		String formatLat = String.format("%-15s | %-7s | %-7s |", "Latin", lat, latLetter);
+		String formatSci = String.format("%-15s | %-7s | %-7s |", "Science", sci, sciLetter);
+		float points = math + eng + lat + sci;
+		float percentage = points/numOfClasses;
+		String percentageLetter = "";
+		if (percentage > 90) {
+			percentageLetter = "A+";
+		} else if (percentage > 80){
+			percentageLetter = "A";
+		} else if (percentage > 70) {
+			percentageLetter = "B+";
+		} else if (percentage > 60) {
+			percentageLetter = "B";
+		} else if (percentage > 50){
+			percentageLetter = "C";
+		} else if (percentage >= 1) {
+			percentageLetter = "F";
+		} else {
+			System.out.println("Error");
+		}
+		String formatOverallPoints = String.format("%-15s | %-17s |", "Overall", points + "/" + (numOfClasses*100));
+		String formatOverallPercentage = String.format("%-15s | %-7s | %-7s |", "Overall %", percentage + "%", percentageLetter);
+		String statement = "";
+		if (percentageLetter == "A+") {
+			statement = "Your Overall Grade was an A+! Great Work!";
+		} else if (percentageLetter == "A") {
+			statement = "Your Overall Grade was an A! Good Work!";
+		} else if (percentageLetter == "B+") {
+			statement = "Your Overall Grade was an B+! Try a little better next time!";
+		} else if (percentageLetter == "B") {
+			statement = "Your Overall Grade was an B! Try better next time!";
+		} else if (percentageLetter == "C") {
+			statement = "Your Overall Grade was an C! Try studying next time!";
+		} else if (percentageLetter == "F" ) {
+			statement = "Your Overall Grade was an F! You really do need to study!";
+		}
 		
-		//String format = String.format("%-20")
-		
+		System.out.println("");
 		System.out.println("Student Name: " + name);
 		System.out.println("-------------------------------------");
-		System.out.println("Subject         | Marks   | Grade   |");
+		System.out.println(formatTitle);
 		System.out.println("-------------------------------------");
-		System.out.println(mathLetter);
-		System.out.println(engLetter);
+		System.out.println(formatMath);
+		System.out.println(formatEng);
+		System.out.println(formatLat);
+		System.out.println(formatSci);
+		System.out.println("-------------------------------------");
+		System.out.println(formatOverallPoints);
+		System.out.println(formatOverallPercentage);
+		System.out.println("-------------------------------------");
+		System.out.println(statement);
+		
+		
+		
+	
 		
 		
 		
