@@ -51,7 +51,6 @@ public class HW4_1 {
 			System.out.println("There is no smallest number");
 		}
 		
-		System.out.println("asdasd");
 		
 		
 	}	
