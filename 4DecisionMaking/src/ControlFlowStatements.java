@@ -9,7 +9,7 @@ public class ControlFlowStatements {
 		if ((num1 % 2)== 0) {
 			System.out.println(num1 + " is even");
 		} else {
-			System.out.println(num1 + " is odd");
+			System.out.println(num1 + " is odd--test");
 		}
 	}
 }
