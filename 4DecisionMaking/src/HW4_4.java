@@ -4,7 +4,7 @@
  */
 public class HW4_4 {
 	
-	static String returnGrade(float grade, String letter) {
+	public static String returnGrade(float grade, String letter) {
 		if (grade > 100) {
 			System.out.println("Restart and Enter a Valid Grade");
 			grade = 0;
