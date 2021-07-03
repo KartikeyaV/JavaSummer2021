@@ -28,7 +28,17 @@ public class HW6_12 {
 		fibonacci[17] = fibonacci[15] + fibonacci[16];
 		fibonacci[18] = fibonacci[16] + fibonacci[17];
 		fibonacci[19] = fibonacci[17] + fibonacci[18];
+		int ask = RUI.readUserIntInput("Enter A Number <= 20 To Display Until: ");
+		if (ask <= 20) {
+		for (int i = 0; i < ask; i++) {
+			System.out.println((i+1) + ". " + fibonacci[i]);
+			
+		}
+		} else {
+			System.out.println("Number is not Under 20");
+		}
 		
+	
 	}
 
 }
