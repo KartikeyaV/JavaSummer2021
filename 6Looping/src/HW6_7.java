@@ -7,9 +7,13 @@ public class HW6_7 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		for (String i ="*"; i.length()<=5; i = i + "*") {
-			System.out.println(i);
+		for (int i = 0; i<5; i++) {
+			for (int index = 0; index <=i; index++) {
+				System.out.println("* ");
+			}
+			System.out.println();
 		}
+		
 	}
 
 }
