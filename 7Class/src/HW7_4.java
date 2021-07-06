@@ -1,4 +1,8 @@
-
+/**
+ * HW7_4
+ * @author karti
+ *
+ */
 public class HW7_4 {
 
 	public static void main(String[] args) {
