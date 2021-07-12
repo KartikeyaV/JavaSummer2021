@@ -29,7 +29,7 @@ public class Account {
 	public void setAccountType(char accountType) {
 		this.accountType = accountType;
 	}
-	int counter = 0;
+	private int counter = 0;
 	public void deposit(float aAmount) {
 	  AccountActivity activity = new AccountActivity();
 	  activity.setTxnDate(new Date());
