@@ -3,7 +3,7 @@ public class AccountActivity {
 	
 		  private Date txnDate;
 		  private float amount;
-		  private String action; //Credit/Debit
+		  private String action;
 		  private String description;
 		  private float runningBalance;
 		public Date getTxnDate() {

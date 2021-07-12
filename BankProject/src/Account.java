@@ -40,8 +40,6 @@ public class Account {
 	  activity.setAction("Credit");
 	  activities[counter] = activity;
 	  counter++;
-	  
-	  //Add activity to activities array
 	  }
 
 	   public float getBalance(){
