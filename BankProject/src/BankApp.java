@@ -2,7 +2,6 @@
 public class BankApp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Account karthik = new Account();
 		karthik.setAccountNumber(1);
 		karthik.setName("Karthik's Savings 101");
