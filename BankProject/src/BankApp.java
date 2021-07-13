@@ -2,7 +2,7 @@
 public class BankApp {
 
 	public static void main(String[] args) {
-		Account karthik = new Account();
+		/*Account karthik = new Account();
 		karthik.setAccountNumber(1);
 		karthik.setName("Karthik's Savings 101");
 		karthik.setAccountType('S');
@@ -46,8 +46,15 @@ public class BankApp {
 		oreo.deposit(5000);
 		oreo.withdraw(50);
 		oreo.deposit(100);
-		oreo.printActivities();
-		
+		oreo.printActivities();*/
+		Customer Karthik = new Customer();
+		Karthik.setName("Karthik");
+		Karthik.setBirthDate("09/26/2006");
+		Karthik.setCustomerID(1);
+		Karthik.setSsn("1234567890");
+		Karthik.addAccount("Karthik's Savings 101", 1 , 'S', 500);
+		Karthik.addAccount("Karthik's College Funds", 2 , 'S', -400);
+		Karthik.printCustomerInfo();	
 		
 		
 		
