@@ -5,10 +5,6 @@
  */
 public class TTTgame {
 	public static char[] cellValue = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
-	
-	
-	
-	
 	public boolean playTurn (int aCellNumber, char aSymbol) {
 		if (cellValue[aCellNumber - 1] == ' ') {
 			cellValue[aCellNumber - 1] = aSymbol;
@@ -18,12 +14,6 @@ public class TTTgame {
 			return false;
 		}	
 	}
-	
-	//This should return game status:
-	// W - Won
-	// D - Draw
-	// I - Incomplete
-	  
 	public String isGameOver() {
 		if ((cellValue[0] == 'O' && cellValue[3] == 'O' && cellValue[6] == 'O') || (cellValue[1] == 'O' && cellValue[4] == 'O' && cellValue[7] == 'O') || (cellValue[2] == 'O' && cellValue[5] == 'O' && cellValue[8] == 'O')) {
 			return "Player 2 Has Won the Game!";
@@ -38,15 +28,11 @@ public class TTTgame {
 		} else if ((cellValue[0] == 'X' && cellValue[4] == 'X' && cellValue[8] == 'X') || (cellValue[2] == 'X' && cellValue[4] == 'X' && cellValue[6] == 'X')) {
 			return "Player 1 Has Won the Game!";
 		} 
-		
 		if (cellValue[0] != ' ' && cellValue[1] != ' ' && cellValue[2] != ' ' && cellValue[3] != ' ' && cellValue[4] != ' ' && cellValue[5] != ' ' && cellValue[6] != ' ' && cellValue[7] != ' ' && cellValue[8] != ' ') {
 			return "Draw";
 		}
 		return "Incomplete";
-		
 	}
-	
-	
 	public void printGame() {
 		printRow(1);
 		System.out.println("------------------------------------------------");		
@@ -55,7 +41,6 @@ public class TTTgame {
 		printRow(3);
 		System.out.println();
 	}
-	
 	private void printRow (int aRowNum) {
 		if (aRowNum == 1) {
 			System.out.println("\t1\t|\t2\t|\t3\t");
@@ -71,6 +56,4 @@ public class TTTgame {
 			System.out.println("\t" + cellValue[6] +  "\t|\t" + cellValue[7] +  "\t|\t" + cellValue[8] + "\t");
 		}
 	}
-	
-
 }

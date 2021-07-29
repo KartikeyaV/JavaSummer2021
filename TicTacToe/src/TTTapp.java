@@ -19,7 +19,6 @@ public class TTTapp {
 			System.out.println();
 			System.out.println("Final Game Details: ");
 			System.out.println();
-			
 			game.printGame();
 		}
 		if (playerSign == 'X') {
@@ -28,8 +27,6 @@ public class TTTapp {
 			playerSign = 'X';
 		}
 		}
-		
-
 	}
 
 }
